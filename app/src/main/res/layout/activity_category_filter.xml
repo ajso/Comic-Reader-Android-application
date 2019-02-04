@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="8dp"
+    android:layout_height="match_parent"
+    tools:context=".CategoryFilter">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <Button
+            android:id="@+id/btn_filter"
+            android:drawableLeft="@drawable/ic_search_white_24dp"
+            android:text="FILTER"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:background="@color/textColor"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:drawableLeft="@drawable/ic_search_white_24dp"
+            android:text="SEARCH"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:background="#854000"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+
+            android:text="ALL COMIC"
+            android:layout_weight="2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@drawable/horizontal_line"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="3dp" />
+
+        </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_filter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
