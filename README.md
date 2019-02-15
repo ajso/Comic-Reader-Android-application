@@ -1,0 +1,2 @@
+# Comic-Reader-Android-application
+Think of an application where people can go and find their favorite novels, history books, published research work, comic stories and other publications. Comic reader application is here to provide that service. Read and search for your favorite novels and comics. This application source code also provides resource base knowledge for android developers out there who intend to start developing NODEJS APIs for their android applications. Cheers.
